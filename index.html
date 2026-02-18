@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessments and Banks</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #333;
+    }
+
+    header {
+        text-align: center;
+        padding: 30px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        padding: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+        margin-top: 0;
+        color: #1e3c72;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 8px;
+    }
+
+    .links a {
+        color: #1565c0;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    .section {
+        margin-bottom: 12px;
+    }
+
+    .section-title {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>Assessments and Banks</header>
+
+<div class="container">
+
+    <!-- COMMON CORE 1 -->
+    <div class="card">
+        <h2>Common Core 1</h2>
+        <div class="links">
+            <div class="section">
+                Whole Course:
+                <a href="cc1_bank.html">Bank</a> |
+                <a href="cc1_assess.html">Assessment</a>
+            </div>
+
+            <div class="section-title">Standards</div>
+
+            <!-- Standards 1-10 -->
+            <!-- Loop replicated manually -->
+            <!-- You can duplicate pattern for other courses -->
+
+            <!-- Standards -->
+            <!-- CC1 -->
+            <div class="section">
+                Standard 1:
+                <a href="cc1_bank01.html">Bank 1</a> |
+                <a href="cc1_assess01.html">Assessment 1</a>
+            </div>
+            <div class="section">
+                Standard 2:
+                <a href="cc1_bank02.html">Bank 2</a> |
+                <a href="cc1_assess02.html">Assessment 2</a>
+            </div>
+            <div class="section">
+                Standard 3:
+                <a href="cc1_bank03.html">Bank 3</a> |
+                <a href="cc1_assess03.html">Assessment 3</a>
+            </div>
+            <div class="section">
+                Standard 4:
+                <a href="cc1_bank04.html">Bank 4</a> |
+                <a href="cc1_assess04.html">Assessment 4</a>
+            </div>
+            <div class="section">
+                Standard 5:
+                <a href="cc1_bank05.html">Bank 5</a> |
+                <a href="cc1_assess05.html">Assessment 5</a>
+            </div>
+            <div class="section">
+                Standard 6:
+                <a href="cc1_bank06.html">Bank 6</a> |
+                <a href="cc1_assess06.html">Assessment 6</a>
+            </div>
+            <div class="section">
+                Standard 7:
+                <a href="cc1_bank07.html">Bank 7</a> |
+                <a href="cc1_assess07.html">Assessment 7</a>
+            </div>
+            <div class="section">
+                Standard 8:
+                <a href="cc1_bank08.html">Bank 8</a> |
+                <a href="cc1_assess08.html">Assessment 8</a>
+            </div>
+            <div class="section">
+                Standard 9:
+                <a href="cc1_bank09.html">Bank 9</a> |
+                <a href="cc1_assess09.html">Assessment 9</a>
+            </div>
+            <div class="section">
+                Standard 10:
+                <a href="cc1_bank10.html">Bank 10</a> |
+                <a href="cc1_assess10.html">Assessment 10</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat structure for other courses -->
+    <!-- To keep response readable, below courses follow same pattern -->
+
+    <!-- Common Core 2 -->
+    <div class="card">
+        <h2>Common Core 2</h2>
+        <div class="links">
+            <div class="section">
+                Whole Course:
+                <a href="cc2_bank.html">Bank</a> |
+                <a href="cc2_assess.html">Assessment</a>
+            </div>
+            <!-- Standards 1-10 -->
+            <!-- Pattern repeated -->
+            <!-- Replace cc1 with cc2 -->
+            <!-- For brevity shown compactly -->
+            <!-- You can expand visually if desired -->
+            <!-- Standards -->
+            <script>
+                // Auto-generate standards for CC2
+                for(let i=1;i<=10;i++){
+                    document.write(`
+                        <div class="section">
+                        Standard ${i}:
+                        <a href="cc2_bank${String(i).padStart(2,'0')}.html">Bank ${i}</a> |
+                        <a href="cc2_assess${String(i).padStart(2,'0')}.html">Assessment ${i}</a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Algebra I -->
+    <div class="card">
+        <h2>Algebra I</h2>
+        <div class="links">
+            <div class="section">
+                Whole Course:
+                <a href="alg1_bank.html">Bank</a> |
+                <a href="alg1_assess.html">Assessment</a>
+            </div>
+            <script>
+                for(let i=1;i<=10;i++){
+                    document.write(`
+                        <div class="section">
+                        Standard ${i}:
+                        <a href="alg1_bank${String(i).padStart(2,'0')}.html">Bank ${i}</a> |
+                        <a href="alg1_assess${String(i).padStart(2,'0')}.html">Assessment ${i}</a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Geometry -->
+    <div class="card">
+        <h2>Geometry</h2>
+        <div class="links">
+            <div class="section">
+                Whole Course:
+                <a href="geo_bank.html">Bank</a> |
+                <a href="geo_assess.html">Assessment</a>
+            </div>
+            <script>
+                for(let i=1;i<=10;i++){
+                    document.write(`
+                        <div class="section">
+                        Standard ${i}:
+                        <a href="geo_bank${String(i).padStart(2,'0')}.html">Bank ${i}</a> |
+                        <a href="geo_assess${String(i).padStart(2,'0')}.html">Assessment ${i}</a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Algebra II -->
+    <div class="card">
+        <h2>Algebra II</h2>
+        <div class="links">
+            <div class="section">
+                Whole Course:
+                <a href="alg2_bank.html">Bank</a> |
+                <a href="alg2_assess.html">Assessment</a>
+            </div>
+            <script>
+                for(let i=1;i<=10;i++){
+                    document.write(`
+                        <div class="section">
+                        Standard ${i}:
+                        <a href="alg2_bank${String(i).padStart(2,'0')}.html">Bank ${i}</a> |
+                        <a href="alg2_assess${String(i).padStart(2,'0')}.html">Assessment ${i}</a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- PreCalculus -->
+    <div class="card">
+        <h2>PreCalculus</h2>
+        <div class="links">
+            <div class="section">
+                Whole Course:
+                <a href="precalc_bank.html">Bank</a> |
+                <a href="precalc_assess.html">Assessment</a>
+            </div>
+            <script>
+                for(let i=1;i<=10;i++){
+                    document.write(`
+                        <div class="section">
+                        Standard ${i}:
+                        <a href="precalc_bank${String(i).padStart(2,'0')}.html">Bank ${i}</a> |
+                        <a href="precalc_assess${String(i).padStart(2,'0')}.html">Assessment ${i}</a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
